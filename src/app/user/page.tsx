@@ -24,7 +24,9 @@ const AwesomeTopPage = () => {
           {data?.map((user: any) => (
             <div key={user.id} onClick={
               () => onClickRow(user.id)
-            }>
+            }
+            className="cursor-pointer"
+            >
               <div>{user.name}</div>
             </div>
             ))}
